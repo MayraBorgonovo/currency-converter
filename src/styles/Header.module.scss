@@ -1,0 +1,58 @@
+
+.Header {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background-color: white;
+  color: white;
+
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 450px;
+    border-radius: 0% 0% 100% 0% / 0% 0% 19% 0%;;
+    background:radial-gradient(circle at top left,#4a42ec 0,#06010c 100%);
+    background-color: #511d91;
+    box-shadow: #1d053a7c 0px 1.6px 3px 1px;
+
+    div {
+      width: 100%;
+      height: 100%;
+      border-radius: 0% 0% 100% 0% / 0% 0% 14% 0%;;
+      background:radial-gradient(circle at top left,#4a42ec 0,#521d91 100%);
+      background-color: #511d91;
+      opacity: 0.4;
+      box-shadow: #521d9199 0px 1.6px 3px 1px;
+    }
+    
+  }
+
+  .hero {
+    position: absolute;
+    top: 70px;
+    margin: 3rem;
+    z-index: 5;
+  }
+
+  h1 {
+  font-size: 4.2rem;
+  padding: 0;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 1.95rem;
+  }
+
+  img {
+    position: relative;
+    z-index: 6;
+    height: 50px;
+    margin: 3rem;
+  }
+}
+
+
+

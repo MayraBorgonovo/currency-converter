@@ -1,0 +1,80 @@
+.ExchangeCard {
+  position: relative;
+  width: 60%;
+  min-width: 550px;
+  height: 350px;
+  margin-top: -100px;
+  padding: 0 1rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow:rgba(0, 0, 0, 0.13) 0px 1.6px 3.6px 2px, rgba(0, 0, 0, 0.11) 0px 0.3px 0.9px;
+  z-index: 5;
+
+  .titleContainer {
+    min-height: 80px;
+    
+    h2 {
+      font-size: 2.5rem;
+      padding-top: 2rem;
+      }
+  }
+
+  .ExchangeCurrency {
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .dropdownContainer {
+    display: flex;
+    box-shadow: rgba(0, 17, 51, 0.05) 0px 3px 15px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+  }
+
+  .dropdownContainer:focus-within {
+    border: 1px solid #4a42ec;
+  }
+
+  input {
+    margin: 0px;
+    border: none;
+    border-right: 1px solid rgb(221, 221, 221);;
+    height: 40px;
+    width: 70%;
+    line-height: 35px;
+    color: rgb(96, 94, 92);
+  }
+
+  input:focus-visible,
+  input:focus,
+  input:active {
+    outline: none;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .error {
+    color: red;
+    text-align: center;
+  }
+
+  @media screen and (max-width: "650px"){
+    width: 90%;
+    min-width: 370px;
+  }
+}
+
+
+
